@@ -1,4 +1,6 @@
 n = int(input())
+
+# defining "brackets" and creating an empty list for them:
 balanced = ('(', ')')
 brackets = []
 
