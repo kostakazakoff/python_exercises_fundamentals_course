@@ -1,5 +1,6 @@
 Lab: Basic Syntax, Conditional Statements, and Loops
 
+
 1. Number Definer
 
   Write a program that reads a floating-point number and:
