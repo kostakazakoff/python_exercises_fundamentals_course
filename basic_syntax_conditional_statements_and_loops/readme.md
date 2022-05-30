@@ -33,12 +33,3 @@ Lab: Basic Syntax, Conditional Statements, and Loops
   
 7. Patterns
   Write a program that receives a number and creates the following pattern. The number represents the largest count of stars on one row.
-  
-  *
-  **
-  ***
-  ****
-  ***
-  **
-  *
-  
