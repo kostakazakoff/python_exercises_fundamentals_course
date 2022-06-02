@@ -6,8 +6,11 @@ Lab: Lists Basics
 You are at the zoo, and the meerkats look strange.
 You will receive 3 strings on separate lines, representing the tail, the body, and the head of an animal in that order.
 Your task is to re-arrange the elements in a list so that the animal looks normal again:
+
 · On the first position is the head;
+
 · On the second position is the body;
+
 · On the last one is the tail.
 
 
@@ -23,7 +26,9 @@ You should create a list of courses and print it.
 On the first line, you will receive a number n.
 On the following n lines, you will receive integers.
 You should create and print two lists:
+
 · One with all the positives (including 0) numbers
+
 · One with all the negatives numbers
 
 Finally, print the following message:
@@ -45,9 +50,13 @@ you should filter out only the strings that include the given word and print tha
 On the first line, you will receive a single number n.
 On the following n lines, you will receive integers.
 After that, you will be given one of the following commands:
+
 · even
+
 · odd
+
 · negative
+
 · positive
 
 Filter all the numbers that fit in the category (0 counts as a positive and even).
