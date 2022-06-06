@@ -15,7 +15,7 @@ def filter_numbers(num, command):
         for n in num:
             if n >= 0:
                 output.append(n)
-    return(output)
+    return output
 
 
 lines = int(input())
