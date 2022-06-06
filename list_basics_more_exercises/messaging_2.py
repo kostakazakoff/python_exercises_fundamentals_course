@@ -10,7 +10,7 @@ def message_encode(strings_of_numbers, source_message):
     # iterating to extract the codes from the numbers list:
     for code in strings_of_numbers:
         # taking the sum of code integers
-        # it's the searched index of the simbol in the source message list:
+        # it's the searched index of the symbol in the source message list:
         i = sum(int(x) for x in code)
         # if the end of the source message list is exceeded,
         # start from the first index (using a division by remainder):
