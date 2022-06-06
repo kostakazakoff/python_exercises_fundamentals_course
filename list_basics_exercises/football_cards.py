@@ -1,5 +1,4 @@
-cards = input()
-cards = cards.split()
+cards = input().split()
 team_a_players = 11
 team_b_players = 11
 players_off = []
