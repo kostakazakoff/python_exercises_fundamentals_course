@@ -1,31 +1,23 @@
-def filter_numbers(num, command):
-    if command == 'even':
-        for n in num:
-            if n % 2 == 0:
-                output.append(n)
-    elif command == 'odd':
-        for n in num:
-            if n % 2 != 0:
-                output.append(n)
-    elif command == 'negative':
-        for n in num:
-            if n < 0:
-                output.append(n)
-    elif command == 'positive':
-        for n in num:
-            if n >= 0:
-                output.append(n)
+def filter_numbers(numbers, definition):
+    output = []
+    for number in numbers:
+        definitions = (
+            (definition == 'even' and number % 2 == 0),
+            (definition == 'odd' and number % 2 != 0),
+            (definition == 'negative' and number < 0),
+            (definition == 'positive' and number >= 0)
+        )
+        if any(definitions):
+            output.append(number)
     return output
 
 
 lines = int(input())
-num = []
-output = []
+integers = []
 
 for i in range(lines):
     n = int(input())
-    num.append(n)
+    integers.append(n)
+num_type = input()
 
-command = input()
-
-print(filter_numbers(num, command))
+print(filter_numbers(integers, num_type))
