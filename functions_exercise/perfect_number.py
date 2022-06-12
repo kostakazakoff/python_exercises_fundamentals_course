@@ -1,6 +1,3 @@
-num = int(input())
-
-
 def perfect_number(number):
     result = sum(n for n in range(1, number) if number % n == 0)
     if result == number:
@@ -10,4 +7,5 @@ def perfect_number(number):
     return output
 
 
+num = int(input())
 print(perfect_number(num))
