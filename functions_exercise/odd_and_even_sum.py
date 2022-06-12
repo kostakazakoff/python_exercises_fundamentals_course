@@ -1,6 +1,3 @@
-source_number = input()
-
-
 def odd_even_sum(source):
     numbers = list(int(x) for x in source)
     evens = list(filter(lambda x: x % 2 == 0, numbers))
@@ -15,4 +12,5 @@ def odd_even_sum(source):
     print(f'Odd sum = {odd_sum()}, Even sum = {even_sum()}')
 
 
+source_number = input()
 odd_even_sum(source_number)

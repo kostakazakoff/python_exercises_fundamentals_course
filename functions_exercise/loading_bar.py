@@ -1,14 +1,10 @@
-num = int(input())
-
-
 def loading_bar(percent):
-    x = int(percent / 10)
-    loadbar = '[' + '%' * x + '.' * (10 - x) + ']'
-    if percent >= 100:
-        message = '100% Complete!\n' + loadbar
-    if percent < 100:
-        message = f'{percent}% {loadbar}\nStill loading...'
-    return message
+    x = percent // 10
+    load_level = f'[{"%" * x}{"." * (10 - x)}]'
+    if percent == 100:
+        return f'100% Complete!\n{load_level}'
+    return f'{percent}% {load_level}\nStill loading...'
 
 
-print(loading_bar(num))
+bar_value = int(input())
+print(loading_bar(bar_value))

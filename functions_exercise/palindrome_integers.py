@@ -1,6 +1,3 @@
-numbers = list(input().split(', '))
-
-
 def palindrome_integer(list_of_integers):
     for integer in list_of_integers:
         integer = list(integer)
@@ -8,4 +5,5 @@ def palindrome_integer(list_of_integers):
         print(palindrome)
 
 
+numbers = list(input().split(', '))
 palindrome_integer(numbers)

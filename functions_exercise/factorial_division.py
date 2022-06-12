@@ -1,4 +1,6 @@
-def factorial_number(integer):
+def factorial(integer):
+    if integer == 0:
+        integer = 1
     for n in range(1, integer):
         integer *= n
     return integer
@@ -6,5 +8,5 @@ def factorial_number(integer):
 
 int_1 = int(input())
 int_2 = int(input())
-division = factorial_number(int_1) / factorial_number(int_2)
+division = factorial(int_1) / factorial(int_2)
 print(f'{division:.2f}')
