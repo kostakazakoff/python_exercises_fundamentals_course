@@ -1,7 +1,3 @@
-type = input()
-source = input()
-
-
 def data_types(datatype, string):
     if 'int' in type:
         result = int(source) * 2
@@ -12,4 +8,6 @@ def data_types(datatype, string):
     return result
 
 
+type = input()
+source = input()
 print(data_types(type, source))
