@@ -1,13 +1,12 @@
-def data_types(datatype, string):
-    if 'int' in type:
-        result = int(source) * 2
-    elif 'real' in type:
-        result = f'{float(source) * 1.5:.2f}'
-    elif 'string' in type:
-        result = f'${source}$'
-    return result
+def data_types(datatype, string: str):
+    if 'int' in datatype:
+        return int(string) * 2
+    elif 'real' in datatype:
+        return f'{float(string) * 1.5:.2f}'
+    elif 'string' in datatype:
+        return f'${string}$'
 
 
-type = input()
+data_type = input()
 source = input()
-print(data_types(type, source))
+print(data_types(data_type, source))

@@ -1,17 +1,14 @@
 def multiplication_sign(a, b, c):
-    numbers = [n1, n2, n3]
+    numbers = [a, b, c]
     zero = numbers.count(0) > 0
     negative_numbers = list(filter(lambda x: x < 0, numbers))
     negative = len(negative_numbers) % 2 != 0 and not zero
-
     if negative:
-        sign = 'negative'
+        return 'negative'
     elif zero:
-        sign = 'zero'
+        return 'zero'
     else:
-        sign = 'positive'
-
-    return sign
+        return 'positive'
 
 
 n1 = int(input())

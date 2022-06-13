@@ -6,6 +6,6 @@ def tribonacci(count):
     return list(filter(lambda x: x != 0, tribonacci_numbers))
 
 
-count_of_numbers = int(input())
-result = tribonacci(count_of_numbers)
+count_of_tribonacci_numbers = int(input())
+result = tribonacci(count_of_tribonacci_numbers)
 print(*result)
