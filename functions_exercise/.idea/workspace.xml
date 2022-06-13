@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bcabaaf-8735-4c83-8992-a2929088c36f" name="Changes" comment="" />
+    <list default="true" id="8bcabaaf-8735-4c83-8992-a2929088c36f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/characters_in_range.py" beforeDir="false" afterPath="$PROJECT_DIR$/characters_in_range.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/min_max_and_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/min_max_and_sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odd_and_even_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/odd_and_even_sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/password_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/password_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfect_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfect_number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallest_of_three_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/smallest_of_three_numbers.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

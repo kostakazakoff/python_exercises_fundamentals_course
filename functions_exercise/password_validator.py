@@ -1,4 +1,4 @@
-def password_validation(password):
+def password_validation(password: str):
     def valid_length():
         if len(password) < 6 or len(password) > 10:
             print('Password must be between 6 and 10 characters')

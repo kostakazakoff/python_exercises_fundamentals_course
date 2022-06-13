@@ -1,4 +1,4 @@
-def odd_even_sum(source):
+def odd_even_sum(source: str):
     numbers = list(int(x) for x in source)
     evens = list(filter(lambda x: x % 2 == 0, numbers))
     odds = list(filter(lambda x: x % 2 != 0, numbers))
