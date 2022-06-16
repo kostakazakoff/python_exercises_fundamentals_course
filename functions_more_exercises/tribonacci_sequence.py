@@ -1,9 +1,9 @@
 def tribonacci(count):
-    tribonacci_numbers = [0, 0, 1]
-    for i in range(count - 1):
-        number = tribonacci_numbers[-1] + tribonacci_numbers[-2] + tribonacci_numbers[-3]
+    tribonacci_numbers = [1]
+    for _ in range(count - 1):
+        number = sum(tribonacci_numbers[:-4:-1])
         tribonacci_numbers.append(number)
-    return list(filter(lambda x: x != 0, tribonacci_numbers))
+    return tribonacci_numbers
 
 
 count_of_tribonacci_numbers = int(input())
