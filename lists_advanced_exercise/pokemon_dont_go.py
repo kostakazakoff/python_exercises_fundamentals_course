@@ -1,22 +1,22 @@
-def bigger_or_smaller(pokemon, removed_value):
-    if pokemon <= removed_value:
-        pokemon += removed_value
+def bigger_or_smaller(indexed_number, removed_number):
+    if indexed_number <= removed_number:
+        indexed_number += removed_number
     else:
-        pokemon -= removed_value
-    return pokemon
+        indexed_number -= removed_number
+    return indexed_number
 
 
-def pokemon_catch(pokemons, index):
+def pokemon_catch(list_of_numbers, index):
     if index < 0:
-        pokemons[0] = pokemons[-1]
-        removed_pokemon = pokemons[0]
-    elif index >= len(pokemons):
-        pokemons[-1] = pokemons[0]
-        removed_pokemon = pokemons[-1]
+        removed_one = list_of_numbers[0]
+        list_of_numbers[0] = list_of_numbers[-1]
+    elif index >= len(list_of_numbers):
+        removed_one = list_of_numbers[-1]
+        list_of_numbers[-1] = list_of_numbers[0]
     else:
-        removed_pokemon = pokemons.pop(index)
-    pokemons = [bigger_or_smaller(indexed_pokemon, removed_pokemon) for indexed_pokemon in pokemons]
-    return removed_pokemon, pokemons
+        removed_one = list_of_numbers.pop(index)
+    list_of_numbers = [bigger_or_smaller(indexed_pokemon, removed_one) for indexed_pokemon in list_of_numbers]
+    return removed_one, list_of_numbers
 
 
 list_of_pokemons = list(map(int, input().split()))
