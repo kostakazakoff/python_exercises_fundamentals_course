@@ -1,44 +1,35 @@
-def valid_price(part_price: float):
-    if part_price < 0:
+def valid(price: float):
+    if price < 0:
+        print('Invalid price!')
+        return False
+    elif price == 0:
+        print('Invalid order!')
         return False
     return True
 
 
-def valid_order(order_total_price: float):
-    if order_total_price <= 0:
-        return False
-    return True
-
-
-def order_with_tax(total_order_price: float):
-    return total_order_price, total_price * 0.2, total_order_price * 1.2
-
-
-def customer_discount(order: float, customer_status: str):
-    if customer_status == 'special':
-        return order * 0.9
-    return order
-
+price_without_taxes = 0
 
 command = input()
-total_price = 0
-
 while command != 'special' and command != 'regular':
-    price = float(command)
-    if not valid_price(price):
-        print('Invalid price!')
+    part_price = float(command)
+    if not valid(part_price):
         command = input()
         continue
-    total_price += price
+    price_without_taxes += part_price
     command = input()
 
-if not valid_order(total_price):
-    print('Invalid order!')
-else:
-    total_price, tax, total_price_with_tax = order_with_tax(total_price)
-    final_order = customer_discount(total_price_with_tax, command)
-    print("Congratulations you've just bought a new computer!\n"
-          f"Price without taxes: {total_price:.2f}$\n"
-          f"Taxes: {tax:.2f}$\n"
-          f"-----------\n"
-          f"Total price: {final_order:.2f}$")
+if not valid(price_without_taxes):
+    exit()
+
+price_with_taxes = price_without_taxes * 1.2
+taxes = price_without_taxes * 0.2
+
+if command == 'special':
+    price_with_taxes = price_with_taxes * 0.9
+
+print("Congratulations you've just bought a new computer!")
+print(f'Price without taxes: {price_without_taxes:.2f}$')
+print(f'Taxes: {taxes:.2f}$')
+print('-----------')
+print(f'Total price: {price_with_taxes:.2f}$')
