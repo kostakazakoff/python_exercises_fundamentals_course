@@ -26,7 +26,6 @@ def battle_room(monster: str, amount: int, current_health: int):
 
 health = 100
 bitcoins = 0
-best_room = 0
 rooms = []
 room_inputs = input().split('|')
 
